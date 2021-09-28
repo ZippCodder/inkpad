@@ -3,14 +3,14 @@
 "name": "Inkpad Sketchbook",
 "icons": [
 	{
-src: "https://zippcodder.github.io/inkpad/pages/icon_192x192.png",
-type: "image/png",
-sizes: "192x192"
+"src": "https://zippcodder.github.io/inkpad/pages/icon_192x192.png",
+"type": "image/png",
+"sizes": "192x192"
 	},
 	{
-src:  "https://zippcodder.github.io/inkpad/pages/icon_512x512.png",
-type: "image/png",
-sizes: "512x512"
+"src":  "https://zippcodder.github.io/inkpad/pages/icon_512x512.png",
+"type": "image/png",
+'sizes": "512x512"
 	}
 ],
 "start_url": "https://zippcodder.github.io/inkpad/pages/index.html",
