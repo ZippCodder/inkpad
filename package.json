@@ -1,0 +1,55 @@
+{
+  "name": "Pictr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build:prod": "BROWSERSLIST_ENV=modern webpack --mode=production --node-env=production && echo \"WAIT FOR LEGACY BUILD...\" && BROWSERSLIST_ENV=legacy webpack --mode=production --node-env=production",
+    "build:dev": "BROWSERSLIST_ENV=modern webpack --mode=development --node-env=development && echo \"WAIT FOR LEGACY BUILD...\" &&  BROWSERSLIST_ENV=legacy webpack --mode=development --node-env=development",
+    "watch": "webpack --watch",
+    "serve:modern": "NODE_ENV=development BROWSERSLIST_ENV=modern webpack serve --mode=development",
+    "serve:legacy": "NODE_ENV=development BROWSERSLIST_ENV=legacy webpack serve --mode=development",
+    "serve:dev": "NODE_ENV=development node index.js",
+    "serve:prod": "NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZippCodder/Pictr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZippCodder/Pictr/issues"
+  },
+  "homepage": "https://github.com/ZippCodder/Pictr#readme",
+  "dependencies": {
+    "core-js": "^3.15.2",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/react": "^17.0.14",
+    "@webpack-cli/generators": "^2.2.0",
+    "autoprefixer": "^10.3.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.2",
+    "jest": "^27.0.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^6.1.1",
+    "style-loader": "^3.0.0",
+    "typescript": "^4.3.4",
+    "webpack": "^5.41.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

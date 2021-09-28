@@ -1,0 +1,237 @@
+/* Homepage styles */
+
+.main-container {
+width: auto;
+height: 100%;
+padding-top: var(--primary-padding);
+}
+
+i {
+font-size: 140%;
+border-left: 1px solid white;
+padding-left: 4%;
+margin-left: 2vw;
+}
+
+.main-container__intro {
+text-align: center;
+}
+
+.main-container__intro__heading, .main-container__intro__getStarted__heading {
+font-family: var(--main-font);
+font-size: calc(2em + 3vmin);
+padding-left: var(--horizontal-padding);
+padding-right: var(--horizontal-padding);
+}
+
+.main-container__intro__getStarted__heading {
+display: none;
+margin-top: var(--primary-margin);
+padding: 0;
+}
+
+.main-container__intro__welcome {
+font-family: var(--main-font);
+}
+
+.main-container__intro__notepad, .main-container__intro__getStarted__notepad {
+--notepad-width: 60vw;
+--notepad-aspect-ratio: 1.5/2;
+width: var(--notepad-width);
+left: 20%;
+aspect-ratio: var(--notepad-aspect-ratio);
+position: relative;
+z-index: 1;
+display: grid;
+transform: rotate(20deg);
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+}
+
+.main-container__intro__getStarted__notepad {
+display: none;
+}
+
+.main-container__intro__notepad__img {
+width: var(--notepad-width);
+aspect-ratio: var(--notepad-aspect-ratio);
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 2;
+z-index: 0; 
+}
+
+.main-container__intro__pencil__img {
+contain: content;
+width: var(--notepad-width);
+aspect-ratio: var(--notepad-aspect-ratio);
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 2;
+object-fit: contain;
+z-index: 1;
+transform: scale(1.3) rotate(70deg) translate(-5%,20%);
+}
+
+.main-container__intro__notepad__animation {
+background: none;
+display: block;
+aspect-ratio: var(--notepad-aspect-ratio);
+width: var(--notepad-width);
+z-index: 1;
+contain: content;
+transform: scale(0.7);
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 2;
+}
+
+.main-container__intro__paragraph, .main-container__editor__paragraph {
+font-family: var(--main-font);
+line-height: clamp(30px,6vw,1.5em);
+font-size: clamp(15px,3vw,1.5em);
+position: relative;
+color: white;
+width: 80%;
+left: 10%;
+}
+
+.main-container__editor__paragraph {
+color: white;
+}
+
+.main-container__editor__heading {
+font-size: 2em;
+}
+
+.main-container__intro__getStarted {
+width: 100%;
+margin-top: var(--primary-margin);
+padding-top: var(--primary-padding);
+padding-bottom: var(--primary-margin);
+background: var(--main-gray);
+z-index: 1;
+}
+
+.main-container__editor {
+width: 100%;
+padding-top: var(--primary-padding);
+padding-bottom: calc(var(--primary-margin)*2);
+background: var(--main-gray);
+text-align: center;
+color: white;
+font-family: var(--main-font);
+z-index: 1;
+}
+
+.main-container__block, .main-container__editor__block {
+width: 6rem;
+height: 6rem;
+background: white;
+z-index: 0;
+border: none;
+position: relative;
+transform: translateY(calc(-10vmin + -3rem)) rotate(45deg);
+left: calc(50% - 3rem);
+}
+
+.main-container__editor__block {
+display: none;
+}
+
+.main-container__intro__getStarted__button, .main-container__editor__tryIt {
+position: relative;
+margin-top: var(--secondary-margin);
+text-align: center;
+background-color: var(--main-primary);
+color: white;
+border: none;
+min-width: 5vw;
+z-index: 1;
+border-radius: 0.2em;
+white-space: nowrap;
+padding: 3%;
+font-size: clamp(1em,3vw,1.5em);
+box-sizing: content-box;
+font-family: var(--main-font);
+}
+
+.main-container__editor__tryIt > i {
+padding-left: 10%;
+}
+
+.main-container__intro__getStarted__logo {
+width: 25vmin;
+filter: brightness(1000%);
+margin: auto;
+display: block;
+}
+
+path {
+stroke-linecap: round;
+stroke-linejoin: round;
+}
+
+.animation-earth__path {
+animation: earth 30s ease-out infinite;
+stroke-dasharray: 1228;
+}
+
+.animation-flower__path {
+animation: flower 30s ease-out infinite;
+stroke-dasharray: 1620;
+}
+
+.animation-hello__path {
+animation: hello 5s ease-out infinite;
+stroke-dasharray: 993;
+}
+
+@keyframes hello {
+
+}
+
+@keyframes flower {
+0% {
+opacity: 1;
+stroke-dashoffset: 1620;
+}
+17% {
+stroke-dashoffset: 0;
+}
+34% {
+stroke-dashoffset: 0;
+opacity: 1;
+}
+51% {
+opacity: 0;
+}
+100% {
+opacity: 0;
+}
+}
+
+@keyframes earth {
+0% {
+opacity: 1;
+stroke-dashoffset: 1228;
+}
+51% {
+stroke-dashoffset: 1228;
+}
+68% {
+stroke-dashoffset: 0;
+}
+85% {
+stroke-dashoffset: 0;
+opacity: 1;
+}
+100% {
+opacity: 0;
+}
+}
+
+

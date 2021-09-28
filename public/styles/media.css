@@ -1,0 +1,104 @@
+/* Media Quieries */
+
+/* header */
+
+@media all and (max-width: 500px) {
+.main-header__slogan {
+display: none;
+}
+}
+
+@media all and (max-width: 400px) {
+.main-header__logo {
+position: relative;
+left: calc(50% - var(--header-height));
+}
+
+.main-header__options {
+display: none;
+}
+
+.main-footer small {
+font-size: 60%;
+}
+
+.main-container__intro__getStarted__logo {
+display: block;
+}
+}
+
+/* intro */
+
+@media all and (min-width: 800px) and (orientation: landscape) {
+.main-container__top {
+display: none;
+}
+
+.main-container__editor__tryIt {
+padding: 2%;
+}
+
+.main-container__intro__getStarted__notepad {
+--notepad-width: 40vw;
+display: grid;
+transform: rotate(25deg);
+margin: auto;
+left: 0;
+}
+
+.main-container__intro__getStarted__heading {
+display: block;
+width: 70%;
+margin: auto;
+}
+
+.main-container__intro__getStarted__logo, .main-container__intro__block, .main-container__block {
+display: none;
+}
+
+.main-container__intro__getStarted {
+background: white;
+display: grid;
+padding-top: 0;
+margin-top: 0;
+padding-left: var(--horizontal-padding);
+padding-bottom: 0;
+box-sizing: border-box;
+}
+
+.main-container__intro__getStarted__button {
+margin: auto;
+}
+
+.main-container__intro__paragraph {
+color: black;
+left: 0;
+position: relative;
+width: 70%;
+margin: auto;
+}
+
+.main-container__intro {
+display: grid;
+text-align: left;
+grid-template-columns: 50% 50%;
+font-size: 0.7em;
+padding-bottom: var(--primary-margin);
+}
+
+.main-container__editor__block {
+display: block;
+padding: 0;
+margin: 0;
+}
+
+.main-container__editor__heading {
+margin-top: var(--primary-margin);
+}
+
+.main-container__editor {
+font-size: 0.9em;
+}
+}
+
+

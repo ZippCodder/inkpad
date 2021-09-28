@@ -1,0 +1,20 @@
+{
+"short-name": "Inkpad",
+"name": "Inkpad",
+"icons": [
+	{
+src: "/images/icon_192x192.png?source=1997836525634",
+type: "image/png",
+sizes: "192x192"
+	}
+	{
+src:  "/images/icon_512x512.png?source=1997836525634",
+type: "image/png",
+sizes: "512x512"
+	}
+],
+"start_url": "/?r=g",
+"background_color": "white",
+"display": "standalone",
+"theme_color": "#D91E41"
+}
