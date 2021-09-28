@@ -13,7 +13,7 @@ type: "image/png",
 sizes: "512x512"
 	}
 ],
-"start_url": "/?r=g",
+"start_url": "https://zippcodder.github.io/inkpad/pages/index.html",
 "background_color": "white",
 "display": "standalone",
 "theme_color": "#D91E41"
