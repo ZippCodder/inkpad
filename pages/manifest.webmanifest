@@ -1,6 +1,6 @@
 {
-"short-name": "Ind",
-"name": "Inkpad",
+"short-name": "Inkpad",
+"name": "Inkpad Sketchbook",
 "icons": [
 	{
 src: "/images/icon_192x192.png?source=1997836525634",
@@ -13,7 +13,7 @@ type: "image/png",
 sizes: "512x512"
 	}
 ],
-"start_url": "https://zippcodder.github.io/inkpad/pages/ind",
+"start_url": "https://zippcodder.github.io/inkpad/pages/index.html",
 "background_color": "white",
 "display": "standalone",
 "theme_color": "#D91E41"
