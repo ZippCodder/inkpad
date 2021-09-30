@@ -8,6 +8,9 @@ import "../../public/styles/media.css";
 import Header from "./header.tsx";
 import { notepad, graphicLogo, pencil } from "./.images.js";
 
+declare const React;
+declare const ReactDOM;
+
 if (navigator.serviceWorker) {
 navigator.serviceWorker.register("/service-worker.js").then(registration => {
 alert("registered!");
@@ -40,7 +43,7 @@ return (
 <img src={graphicLogo} className="main-container__intro__getStarted__logo" alt="logo"/>
 <h1 className="main-container__intro__getStarted__heading">LET LOOSE YOUR CREATIVITY</h1>
 <p className="main-container__intro__paragraph">INKPAD is an online platform for sharing digital artwork like comics and animation to portray stories! Explore thousands of stories of any genre, and learn new techniques through articles written by our online creators. Join now and start sharing your stories.</p>
-<button className="main-container__intro__getStarted__button">GET STARTED <i class="fas fa-sign-in-alt"></i></button>
+<button className="main-container__intro__getStarted__button">GET STARTED <i className="fas fa-sign-in-alt"></i></button>
 </div>
 <div className="main-container__intro__getStarted__notepad">
 {flower}
@@ -53,7 +56,7 @@ return (
 <div className="main-container__editor__block"></div>
 <h1 className="main-container__editor__heading">A Powerful Editor</h1>
 <p className="main-container__editor__paragraph">Create ingaging art and stories through our rich editor. Easy to use and with a variety or options, its a great choice when deciding which tool to use for your work!</p>
-<button className="main-container__editor__tryIt">Try It <i class="fas fa-pen"></i></button>
+<button className="main-container__editor__tryIt">Try It <i className="fas fa-pen"></i></button>
 </section>
 <footer className="main-footer">
 <small>Copyright &#169; 2021 Inkpad. All rights reserved.</small>
