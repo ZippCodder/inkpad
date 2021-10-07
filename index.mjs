@@ -10,6 +10,8 @@ import https from "https";
 import http from "http";
 
 let server = http.createServer(app);//https.createServer(app);
+app.set("views","./public");
+app.set("view engine","pug");
 
 app.all("/",(req,res,next) => {
 // For debug logging request details...
@@ -34,7 +36,6 @@ app.get("/service-worker.js",(req,res,next) => {
 });
 
 app.get("/manifest.webmanifest",(req,res,next) => {
-	console.log("hey")
  res.type("json").sendFile(path.resolve("./manifest.webmanifest"));
 });
 

@@ -25,11 +25,11 @@ const config = {
 	port: 5000,
 	contentBase: path.resolve(__dirname,`./dist/${process.env.BROWSERSLIST_ENV}`)
     },
-    plugins: [
- 	 new HtmlWebpackPlugin({template: `./public/index.${process.env.NODE_ENV}.html`, title: "Inkpad", filename: `index.html`}),
+   // plugins: [
+ //	 new HtmlWebpackPlugin({template: `./public/index.${process.env.NODE_ENV}.html`, title: "Inkpad", filename: `index.html`}),
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-    ],
+  //  ],
     module: {
         rules: [
             {
