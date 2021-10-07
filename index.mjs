@@ -13,22 +13,18 @@ let server = http.createServer(app);//https.createServer(app);
 app.set("views","./public");
 app.set("view engine","pug");
 
-app.all("/",(req,res,next) => {
+app.all("*",(req,res,next) => {
 // For debug logging request details...
   console.log(req.path);
-  debuglog(req.path);
   next();
 });
 
 app.get(/^\/$/,(req,res,next) => {
-  res.type("text/html").sendFile(path.resolve("./dist/modern/index.html")); 
-	console.log(req.query);
+  res.render(`index.${env}.pug`,{title: "Inkpad",script: fs.readFileSync("./dist/modern/home.bundle.modern.js","utf-8") ,polyfill: fs.readFileSync("./dist/modern/polyfill.bundle.modern.js","utf-8")}); 
 });
 
 app.get(/^\/images/,(req,res,next) => {
-	if (req.query.source === "1997836525634") {
  res.type("png").sendFile(path.resolve(`./public/images/${path.basename(req.path)}`));
-	}
 });
 
 app.get("/service-worker.js",(req,res,next) => {

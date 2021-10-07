@@ -10,8 +10,8 @@
     "watch": "webpack --watch",
     "serve:modern": "NODE_ENV=development BROWSERSLIST_ENV=modern webpack serve --mode=development",
     "serve:legacy": "NODE_ENV=development BROWSERSLIST_ENV=legacy webpack serve --mode=development",
-    "serve:dev": "NODE_ENV=development node index.js",
-    "serve:prod": "NODE_ENV=production node index.js"
+    "serve:dev": "NODE_ENV=development node index.mjs",
+    "serve:prod": "NODE_ENV=production node index.mjs"
   },
   "repository": {
     "type": "git",
