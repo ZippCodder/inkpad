@@ -1,22 +1,20 @@
 doctype html
 html
- head
+ head          
   meta(charset="UTF-8")/
   meta(name="viewport" content="width=device-width, initial-scale=1.0")/
-  link(rel="icon" href="/favicon.ico")/
-  link(rel="manifest" href="manifest.webmanifest")/
-  script(type="text/javascript") #{polyfill}
   script(src="https://kit.fontawesome.com/52e3142fe2.js" crossorigin="anonymous")
   link(rel="preconnect" href="https://fonts.googleapis.com")/
+  link(rel="icon" href="/favicon.ico")/
+  link(rel="manifest" href="manifest.webmanifest")/
   link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)/
-  link(href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet")/
+  link(href!="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet")/
   link(rel="preconnect" href="https://fonts.googleapis.com")/
   link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)/
-  link(href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet")/
-  script(crossorigin src="https://unpkg.com/react@17/umd/react.development.js")
+  script(type="text/javascript") !{polyfill}
+  link(href!="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400&display=swap" rel="stylesheet")/script(crossorigin src="https://unpkg.com/react@17/umd/react.development.js")
   script(crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js")
-  script(type="text/javascript") #{script}
   title #{title}
  body
   div(id="root")
-
+ script(type="text/javascript") !{script}

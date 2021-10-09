@@ -20,7 +20,7 @@ app.all("*",(req,res,next) => {
 });
 
 app.get(/^\/$/,(req,res,next) => {
-  res.render(`index.${env}.pug`,{title: "Inkpad",script: fs.readFileSync("./dist/modern/home.bundle.modern.js","utf-8") ,polyfill: fs.readFileSync("./dist/modern/polyfill.bundle.modern.js","utf-8")}); 
+  res.render(`index.${env}.pug`,{title: "Inkpad",script: fs.readFileSync("./dist/modern/home.bundle.modern.js","utf-8"),polyfill: fs.readFileSync("./dist/modern/polyfill.bundle.modern.js","utf-8")});
 });
 
 app.get(/^\/images/,(req,res,next) => {
