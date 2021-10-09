@@ -32,7 +32,7 @@ app.get("/service-worker.js",(req,res,next) => {
 });
 
 app.get("/manifest.webmanifest",(req,res,next) => {
- res.type("json").sendFile(path.resolve("./manifest.webmanifest"));
+ res.type("json").sendFile(path.resolve("./pages/manifest.webmanifest"));
 });
 
 app.get("/favicon.ico",(req,res,next) => {
